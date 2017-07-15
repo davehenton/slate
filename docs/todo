@@ -1,0 +1,27 @@
+PATCH  /v1/orgs/:org_id/permissions/:name(.:format)                                      v1/orgs/permissions#update
+PUT    /v1/orgs/:org_id/permissions/:name(.:format)                                      v1/orgs/permissions#update
+GET    /v1/repos/:repo_id/commits/:commit_sha/files(.:format)                            v1/repos/commits/files#index
+GET    /v1/repos/:repo_id/commits/:commit_sha/files/:path(.:format)                      v1/repos/commits/files#show {:path=>/.*/}
+GET    /v1/repos/:repo_id/comparisons/:comparison_selector/coverage(.:format)            v1/repos/comparisons/coverages#show {:comparison_selector=>/[^\/]+/}
+GET    /v1/repos/:repo_id/comparisons/:comparison_selector/rating_changes(.:format)      v1/repos/comparisons/rating_changes#index {:comparison_selector=>/[^\/]+/}
+GET    /v1/repos/:repo_id/comparisons/:comparison_selector/issues(.:format)              v1/repos/comparisons/issues#index {:comparison_selector=>/[^\/]+/}
+GET    /v1/repos/:repo_id/files(.:format)                                                v1/repos/files#index
+GET    /v1/repos/:repo_id/files/:path(.:format)                                          v1/repos/files#show {:path=>/.*/}
+GET    /v1/repos/:repo_id/metrics(.:format)                                              v1/repos/metrics#index
+GET    /v1/repos/:repo_id/pull_requests/:number(.:format)                                v1/repos/pull_requests#show
+GET    /v1/repos/:repo_id/pulls/:pull_number/coverage(.:format)                          v1/repos/pulls/coverages#show
+POST   /v1/repos/:repo_id/pulls/:pull_number/approvals(.:format)                         v1/repos/pulls/approvals#create
+GET    /v1/repos/:repo_id/ratings(.:format)                                              v1/repos/ratings#index
+POST   /v1/repos/:repo_id/ref_points(.:format)                                           v1/repos/ref_points#create
+POST   /v1/repos/:repo_id/requests(.:format)                                             v1/repos/requests#create
+PATCH  /v1/repos/:repo_id/snapshots/:snapshot_id/issues/:id(.:format)                    v1/repos/snapshots/issues#update
+PUT    /v1/repos/:repo_id/snapshots/:snapshot_id/issues/:id(.:format)                    v1/repos/snapshots/issues#update
+PATCH  /v1/repos/:repo_id/vcs/webhook(.:format)                                          v1/repos/vcs/webhooks#update
+PUT    /v1/repos/:repo_id/vcs/webhook(.:format)                                          v1/repos/vcs/webhooks#update
+PATCH  /v1/repos/:repo_id/vcs/integration(.:format)                                      v1/repos/vcs/integrations#update
+PUT    /v1/repos/:repo_id/vcs/integration(.:format)                                      v1/repos/vcs/integrations#update
+POST   /v1/repos/:repo_id/star(.:format)                                                 v1/repos/stars#create
+DELETE /v1/repos/:repo_id/star(.:format)                                                 v1/repos/stars#destroy
+GET    /v1/repos(.:format)                                                               v1/repos#index
+GET    /v1/repos/:id(.:format)                                                           v1/repos#show
+GET    /v1/stars(.:format)                                                               v1/stars#index

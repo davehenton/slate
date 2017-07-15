@@ -1,0 +1,17 @@
+{
+  "data": {
+    "type": "service_event",
+    "attributes": {
+      "name": "issue",
+      "issue": {
+        "check_name": "Metrics/CyclomaticComplexity",
+        "description": "Cyclomatic complexity for method is too high.",
+        "details_url": "http://example.com/repos/1/issues#issue_12345",
+        "id": "12345",
+        "location": {
+          "path": "foo.rb"
+        }
+      }
+    }
+  }
+}
