@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": "approve-pull-requests",
+    "type": "team_permissions",
+    "attributes": {
+      "granted_to": "owners"
+    }
+  }
+}

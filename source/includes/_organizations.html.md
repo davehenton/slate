@@ -119,6 +119,27 @@ requests.
 
 N/A
 
+## Update permissions
+
+> Given a file with the following contents:
+
+```json
+{
+  "data": {
+    "id": "approve-pull-requests",
+    "type": "team_permissions",
+    "attributes": {
+      "granted_to": "owners"
+    }
+  }
+}
+```
+
+```shell
+```
+
+> JSON response:
+
 ## Create organization
 
 > Given a JSON file "create-org.json" with the following contents ...
