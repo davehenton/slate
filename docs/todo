@@ -1,3 +1,6 @@
+1. Place routes in order of priority
+2. Add "CS" tag to endpoints for ones that CS could document.
+
 PATCH  /v1/orgs/:org_id/permissions/:name(.:format)                                      v1/orgs/permissions#update
 PUT    /v1/orgs/:org_id/permissions/:name(.:format)                                      v1/orgs/permissions#update
 GET    /v1/repos/:repo_id/commits/:commit_sha/files(.:format)                            v1/repos/commits/files#index
