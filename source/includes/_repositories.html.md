@@ -8,7 +8,7 @@
 curl \
   -H "Accept: application/vnd.api+json" \
   -H "Authorization: Token token={TOKEN}" \
-  https://api.codeclimate.com/repos?github_slug=twinpeaks/ranchorosa
+  https://api.codeclimate.com/v1/repos?github_slug=twinpeaks/ranchorosa
 ```
 
 > Alternatively, if you know the repo_id, you can issue the following:
